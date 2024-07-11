@@ -1,0 +1,74 @@
+:root {
+    --maroon: #800000;
+    --maroon-dark: #600000;
+    --maroon-light: #9c0e13;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.bg-maroon {
+    background-color: var(--maroon-light);
+}
+
+.btn-maroon {
+    background-color: var(--maroon);
+    color: white;
+}
+#btn-close{
+    color: white;
+}
+.btn-maroon:hover {
+    background-color: var(--maroon-dark);
+    
+}
+
+.table-maroon {
+    background-color: var(--maroon-light);
+    color: white;
+}
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  
+}
+
+.card-header {
+    border-bottom: 0;
+   
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1e6e6;
+}
+
+#addEventBtn {
+    transition: all 0.2s ease-in-out;
+    color: var(--maroon-light);
+    background-color: 0b5ed7;
+}
+
+#addEventBtn:hover {
+    transform: scale(1.05);
+    color: var(--maroon-light);
+}
+
+.modal-header {
+    background-color: var(--maroon-light);
+    color: white;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+#saveEventBtn {
+    background-color: var(--maroon-light);
+    border-color: var(--maroon);
+}
+
+#saveEventBtn:hover {
+    background-color: var(--maroon-dark);
+    border-color: var(--maroon-dark);
+}

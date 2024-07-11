@@ -19,7 +19,7 @@ saveEventBtn.addEventListener('click', addEvent);
 
 // Fetch events for a specific month
 function getEvents(month) {
-    fetch(`https://myeuc-server.onrender.com//api/events/month/${month}`, { mode: 'cors' })
+    fetch(`https://myeuc-server.onrender.com/api/events/month/${month}`, { mode: 'cors' })
         .then(response => response.json())
         .then(data => {
             displayEvents(data.data);
@@ -75,7 +75,7 @@ function addEvent() {
 
     const formData = { date, event_name, event_description };
     
-    let url = "https://myeuc-server.onrender.com//api/events";
+    let url = "https://myeuc-server.onrender.com/api/events";
     let method = "POST";
 
     if (eventId) {
@@ -130,7 +130,7 @@ function deleteEvent(eventId) {
     if (confirm('Are you sure you want to delete this event?')) {
         const formData = { event_id: eventId };
 
-        fetch("https://myeuc-server.onrender.com//api/events", {
+        fetch("https://myeuc-server.onrender.com/api/events", {
             method: "DELETE",
             body: JSON.stringify(formData),
             headers: {
